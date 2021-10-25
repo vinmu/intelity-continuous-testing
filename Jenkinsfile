@@ -11,7 +11,7 @@ pipeline {
 
         stage('create reservation with cc/id checks enabled') {
           steps {
-            sleep 10
+            sleep 11
             tpJobRun(projectId: 'o9PMCHqfb02X1hDACOa5hg', jobId: 'NHuaKf242U6iD9CJliD13A', agentId: 'aJrwKYXc50ebvFZdq5w_1g', waitJobFinishSeconds: 360)
           }
         }
