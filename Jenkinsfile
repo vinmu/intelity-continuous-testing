@@ -19,5 +19,11 @@ pipeline {
       }
     }
 
+    stage('place engineering dining requests and do cc id verification') {
+      steps {
+        tpJobRun(projectId: 'o9PMCHqfb02X1hDACOa5hg', jobId: '_lX9tthpdEqsXdnYR-QO5Q', agentId: 'aJrwKYXc50ebvFZdq5w_1g', waitJobFinishSeconds: 1200)
+      }
+    }
+
   }
 }
