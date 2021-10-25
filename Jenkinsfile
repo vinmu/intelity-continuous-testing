@@ -25,5 +25,23 @@ pipeline {
       }
     }
 
+    stage('check out reservation') {
+      parallel {
+        stage('check out reservation') {
+          steps {
+            tpJobRun(projectId: 'o9PMCHqfb02X1hDACOa5hg', agentId: 'aJrwKYXc50ebvFZdq5w_1g', jobId: '8N730FcupEas_ngeMmy_BA', waitJobFinishSeconds: 360)
+          }
+        }
+
+        stage('check out reservation and edit affiliate') {
+          steps {
+            sleep 15
+            tpJobRun(projectId: 'o9PMCHqfb02X1hDACOa5hg', jobId: 'L3qgH0A0s0iNMOmCgNFWkQ', agentId: 'aJrwKYXc50ebvFZdq5w_1g', waitJobFinishSeconds: 360)
+          }
+        }
+
+      }
+    }
+
   }
 }
