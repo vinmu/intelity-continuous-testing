@@ -33,6 +33,12 @@ pipeline {
           }
         }
 
+        stage('place engineering request (iOS)') {
+          steps {
+            tpJobRun(projectId: 'eoeVUCkSFkucjcet2iJAKA', jobId: 'V4y7kbNL4ESgQOnsRpvgbA', agentId: 'aJrwKYXc50ebvFZdq5w_1g', waitJobFinishSeconds: 1200)
+          }
+        }
+
       }
     }
 
