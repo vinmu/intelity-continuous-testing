@@ -11,7 +11,7 @@ pipeline {
 
         stage('create reservation with cc/id checks enabled') {
           steps {
-            sleep 21
+            sleep 19
             tpJobRun(projectId: 'o9PMCHqfb02X1hDACOa5hg', jobId: 'NHuaKf242U6iD9CJliD13A', agentId: 'aJrwKYXc50ebvFZdq5w_1g', waitJobFinishSeconds: 600)
           }
         }
@@ -52,7 +52,7 @@ pipeline {
 
         stage('check out reservation and edit affiliate') {
           steps {
-            sleep 15
+            sleep 17
             tpJobRun(projectId: 'o9PMCHqfb02X1hDACOa5hg', jobId: 'L3qgH0A0s0iNMOmCgNFWkQ', agentId: 'aJrwKYXc50ebvFZdq5w_1g', waitJobFinishSeconds: 600)
           }
         }
