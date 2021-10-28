@@ -5,14 +5,14 @@ pipeline {
       parallel {
         stage('create reservation and check-in') {
           steps {
-            tpJobRun(projectId: 'o9PMCHqfb02X1hDACOa5hg', jobId: '3BiaErzSpkm6jizPXF78Xg', agentId: 'aJrwKYXc50ebvFZdq5w_1g', waitJobFinishSeconds: 360)
+            tpJobRun(projectId: 'o9PMCHqfb02X1hDACOa5hg', jobId: '3BiaErzSpkm6jizPXF78Xg', agentId: 'aJrwKYXc50ebvFZdq5w_1g', waitJobFinishSeconds: 600)
           }
         }
 
         stage('create reservation with cc/id checks enabled') {
           steps {
             sleep 23
-            tpJobRun(projectId: 'o9PMCHqfb02X1hDACOa5hg', jobId: 'NHuaKf242U6iD9CJliD13A', agentId: 'aJrwKYXc50ebvFZdq5w_1g', waitJobFinishSeconds: 360)
+            tpJobRun(projectId: 'o9PMCHqfb02X1hDACOa5hg', jobId: 'NHuaKf242U6iD9CJliD13A', agentId: 'aJrwKYXc50ebvFZdq5w_1g', waitJobFinishSeconds: 600)
           }
         }
 
@@ -46,14 +46,14 @@ pipeline {
       parallel {
         stage('check out reservation') {
           steps {
-            tpJobRun(projectId: 'o9PMCHqfb02X1hDACOa5hg', agentId: 'aJrwKYXc50ebvFZdq5w_1g', jobId: '8N730FcupEas_ngeMmy_BA', waitJobFinishSeconds: 360)
+            tpJobRun(projectId: 'o9PMCHqfb02X1hDACOa5hg', agentId: 'aJrwKYXc50ebvFZdq5w_1g', jobId: '8N730FcupEas_ngeMmy_BA', waitJobFinishSeconds: 600)
           }
         }
 
         stage('check out reservation and edit affiliate') {
           steps {
             sleep 17
-            tpJobRun(projectId: 'o9PMCHqfb02X1hDACOa5hg', jobId: 'L3qgH0A0s0iNMOmCgNFWkQ', agentId: 'aJrwKYXc50ebvFZdq5w_1g', waitJobFinishSeconds: 360)
+            tpJobRun(projectId: 'o9PMCHqfb02X1hDACOa5hg', jobId: 'L3qgH0A0s0iNMOmCgNFWkQ', agentId: 'aJrwKYXc50ebvFZdq5w_1g', waitJobFinishSeconds: 600)
           }
         }
 
